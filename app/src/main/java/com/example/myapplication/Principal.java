@@ -21,7 +21,7 @@ public class Principal extends AppCompatActivity {
         comenzar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent comenzar = new Intent(Principal.this, Registro.class) ;
+                Intent comenzar = new Intent(Principal.this, RegistroComenzarAhora.class) ;
                 startActivity(comenzar);
             }
         });
@@ -29,7 +29,7 @@ public class Principal extends AppCompatActivity {
         cuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cuenta = new Intent(Principal.this, IniciarSesion.class);
+                Intent cuenta = new Intent(Principal.this, IniciarSesionComenzarAhora.class);
                 startActivity(cuenta);
             }
         });

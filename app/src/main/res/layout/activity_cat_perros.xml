@@ -1,319 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B8DECD"
-    android:orientation="vertical"
     tools:context=".CatPerros">
 
 
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <ImageButton
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/image_3" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:text="Aquí tus amigos Perrunos pequeños."
-                android:textColor="@color/black" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="16dp"
-                app:cardBackgroundColor="#F1C0B9"
-                app:cardCornerRadius="15dp">
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="15dp">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginLeft="2dp"
-                        android:src="@drawable/image_11">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="85dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Maxi"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="153dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-80dp"
-                        android:layout_marginTop="35dp"
-                        android:text="Edad: 3ños
-                            Raza: Bulldog French
-                            Color: Blanco y negro"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal">
-
-                    </TextView>
-
-                    <com.codesgood.views.JustifiedTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-155dp"
-                        android:layout_marginTop="85dp"
-                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal"
-                        android:gravity="fill_horizontal">
-
-                    </com.codesgood.views.JustifiedTextView>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="16dp"
-                app:cardBackgroundColor="#F1C0B9"
-                app:cardCornerRadius="15dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="15dp">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginLeft="2dp"
-                        android:src="@drawable/image_6__1_">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="85dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Maxi"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="153dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-80dp"
-                        android:layout_marginTop="35dp"
-                        android:text="Edad: 3ños
-                            Raza: Bulldog French
-                            Color: Blanco y negro"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal">
-
-                    </TextView>
-
-                    <com.codesgood.views.JustifiedTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-155dp"
-                        android:layout_marginTop="85dp"
-                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal"
-                        android:gravity="fill_horizontal">
-
-                    </com.codesgood.views.JustifiedTextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="16dp"
-                app:cardBackgroundColor="#F1C0B9"
-                app:cardCornerRadius="15dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="15dp">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginLeft="2dp"
-                        android:src="@drawable/image_7">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="85dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Maxi"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="153dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-80dp"
-                        android:layout_marginTop="35dp"
-                        android:text="Edad: 3ños
-                            Raza: Bulldog French
-                            Color: Blanco y negro"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal">
-
-                    </TextView>
-
-                    <com.codesgood.views.JustifiedTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-155dp"
-                        android:layout_marginTop="85dp"
-                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal"
-                        android:gravity="fill_horizontal">
-
-                    </com.codesgood.views.JustifiedTextView>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="16dp"
-                app:cardBackgroundColor="#F1C0B9"
-                app:cardCornerRadius="15dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="15dp">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginLeft="2dp"
-                        android:src="@drawable/image_11">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="85dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Maxi"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="153dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-80dp"
-                        android:layout_marginTop="35dp"
-                        android:text="Edad: 3ños
-                            Raza: Bulldog French
-                            Color: Blanco y negro"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal">
-
-                    </TextView>
-
-                    <com.codesgood.views.JustifiedTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-155dp"
-                        android:layout_marginTop="85dp"
-                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="normal"
-                        android:gravity="fill_horizontal">
-
-                    </com.codesgood.views.JustifiedTextView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-
-
-    </ScrollView>
-
-
-
-
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/imageView13"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:background="#B8DECD"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagegoo_3_1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tú amigo perruno se adaptaría mejor a tu espacio si es:"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="#B8DECD"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_4" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:background="#B8DECD"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_2" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#B8DECD"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_5" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="#B8DECD"
+        android:contentDescription="@string/action_settings"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_8" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="71dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#B8DECD"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="371dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="179dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/image_6__3_" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="180dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/image_7__2_" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="183dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/image_8__2_" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:text="Pequeño"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:text="Mediano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:text="Grande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
