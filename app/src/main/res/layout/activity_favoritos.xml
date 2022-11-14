@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8DECD"
+    android:orientation="vertical"
+    tools:context=".Favoritos">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="¡Aquí tus amigos Favoritos!"
+                android:textColor="@color/black" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#F1C0B9"
+                app:cardCornerRadius="15dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/image_11__1_">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Atenea"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Edad: 3 años
+                            Raza: Russian Blue
+                            Color: Gris"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-155dp"
+                        android:layout_marginTop="85dp"
+                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:gravity="fill_horizontal">
+
+                    </com.codesgood.views.JustifiedTextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#F1C0B9"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/image_6__1_">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Bruno"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Edad: 5 años
+                            Raza:Yorki
+                            Color: Blanco, cafe y negro"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-155dp"
+                        android:layout_marginTop="85dp"
+                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:gravity="fill_horizontal">
+
+                    </com.codesgood.views.JustifiedTextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#F1C0B9"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/image_11">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Susa"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Edad: 5 años
+                            Raza:Bulldog
+                            Color: Blanco y negro"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-155dp"
+                        android:layout_marginTop="85dp"
+                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:gravity="fill_horizontal">
+
+                    </com.codesgood.views.JustifiedTextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#F1C0B9"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/image_8__1_">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Jack"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Edad:3 meses
+                            Raza: Mix
+                            Color: Tricolor"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-155dp"
+                        android:layout_marginTop="85dp"
+                        android:text="Soy un perrito tierno muy amoroso. Me gustan los paseos largos y que jueguen conmigo a la pelota."
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:gravity="fill_horizontal">
+
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
