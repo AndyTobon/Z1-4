@@ -7,99 +7,36 @@
     android:background="#B8DECD"
     tools:context=".Agregar">
 
-    <ImageButton
-        android:id="@+id/imageView13"
-        android:layout_width="63dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagegoo_3_1"
-        android:focusable="true" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_4" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="55dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="2dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageView13"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_2" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="50dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_5" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="54dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_8" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="71dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_6" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="371dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="421dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintHorizontal_bias="0.112"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/line" />
+        app:layout_constraintVertical_bias="0.006">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <Spinner
         android:id="@+id/spinner"
@@ -112,7 +49,10 @@
         android:contentDescription="@android:string/selectAll"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.862" />
 
     <Spinner
         android:id="@+id/spinner2"
@@ -178,7 +118,7 @@
         android:layout_width="262dp"
         android:layout_height="57dp"
         android:layout_marginStart="32dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="88dp"
         android:background="#fff"
         android:text="Agregar fotografia"
         android:textAlignment="viewStart"
@@ -192,12 +132,12 @@
         android:layout_width="99dp"
         android:layout_height="56dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="88dp"
         android:background="#fff"
         android:contentDescription="logo de cámara"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintHorizontal_bias="0.973"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/image_9" />
 
@@ -211,9 +151,9 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintHorizontal_bias="0.369"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
@@ -233,14 +173,15 @@
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="326dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="268dp"
+        android:layout_marginBottom="224dp"
         android:ems="10"
         android:hint="Bulldog"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.376"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -248,7 +189,7 @@
         android:layout_height="85dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

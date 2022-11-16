@@ -7,13 +7,31 @@
     android:background="#B8DECD"
     tools:context=".Home1">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="421dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="170dp"
         android:layout_height="148dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="136dp"
         android:contentDescription="gatos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,9 +47,10 @@
         android:contentDescription="casa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212"
+        app:layout_constraintVertical_bias="0.296"
         app:srcCompat="@drawable/imagegoo_3_1" />
 
     <ImageView
@@ -40,7 +59,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="136dp"
         android:contentDescription="perros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -62,20 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
-
-    <ImageButton
-        android:id="@+id/imageView13"
-        android:layout_width="63dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagegoo_3_1" />
+        app:layout_constraintVertical_bias="0.432" />
 
     <Button
         android:id="@+id/button4"
@@ -83,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="114dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="72dp"
         android:text="Perro"
         android:textColor="@color/white"
         app:iconTint="@color/black"
@@ -97,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="57dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="72dp"
         android:text="Gato"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,84 +130,16 @@
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_4" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="55dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="2dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageView13"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_2" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="50dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_5" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="54dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_8" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="71dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="#B8DECD"
-        android:contentDescription="@string/action_settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_6" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="371dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/line" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
