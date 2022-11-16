@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -48,6 +50,8 @@ public class Agregar extends AppCompatActivity {
     private static final int SOLICITUD_PERMISO_LECTURA = 0;
     final static int RESULTADO_FOTO=3;
     private Spinner spiner1, spiner2;
+    ArrayList<AdapHome> ListaMenu;
+    RecyclerView recyclerMenu;
     private ImageButton perfil, chat, favoritos, mapa, home, ajustes;
     private final String CARPETA_RAIZ = "misImagenesPrueba/";
     private final String RUTA_IMAGEN = CARPETA_RAIZ + "misFotos";
@@ -66,12 +70,9 @@ public class Agregar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar);
 
-        perfil = (ImageButton) findViewById(R.id.imageButton5);
-        chat = (ImageButton) findViewById(R.id.imageButton2);
-        home = (ImageButton) findViewById(R.id.imageView13);
-        favoritos = (ImageButton) findViewById(R.id.imageButton);
-        mapa = (ImageButton) findViewById(R.id.imageButton4);
-        ajustes = (ImageButton) findViewById(R.id.imageButton3);
+        ListaMenu = new ArrayList<>();
+        recyclerMenu = (RecyclerView) findViewById(R.id.recycle);
+        recyclerMenu.setLayoutManager(new GridLayoutManager(this,3));
 
         spiner1 = (Spinner) findViewById(R.id.spinner);
         spiner2 = (Spinner) findViewById(R.id.spinner2);
@@ -121,53 +122,33 @@ public class Agregar extends AppCompatActivity {
             }
         });
 
-        perfil.setOnClickListener(new View.OnClickListener() {
+        llenarMenu();
+        AdapterHome adapter = new AdapterHome(ListaMenu);
+        adapter.setOnClick(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent favoritos = new Intent(Agregar.this, Perfil.class);
-                startActivity(favoritos);///
-            }
-        });
-
-        chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent favoritos = new Intent(Agregar.this, Chat.class);
-                startActivity(favoritos);
-            }
-        });
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent favoritos = new Intent(Agregar.this, Home1.class);
-                startActivity(favoritos);
-            }
-        });
-
-        favoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                ListaMenu.add(new AdapHome(R.drawable.image_6));
+                Intent perfil = new Intent(Agregar.this, Perfil.class);
+                startActivity(perfil);
+                ListaMenu.add(new AdapHome(R.drawable.imagegoo_3_1));
+                Intent home = new Intent(Agregar.this, Home1.class);
+                startActivity(home);
+                ListaMenu.add(new AdapHome(R.drawable.image_2));
+                Intent chat = new Intent(Agregar.this, Chat.class);
+                startActivity(chat);
+                ListaMenu.add(new AdapHome(R.drawable.image_4));
                 Intent favoritos = new Intent(Agregar.this, Favoritos.class);
-                startActivity(favoritos);///es el icono de la estrella
-            }
-        });
-
-        mapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent favoritos = new Intent(Agregar.this, MAPA.class);
                 startActivity(favoritos);
-            }
-        });
+                ListaMenu.add(new AdapHome(R.drawable.image_8));
+                Intent mapa = new Intent(Agregar.this, MAPA.class);
+                startActivity(mapa);
+                ListaMenu.add(new AdapHome(R.drawable.image_5));
+                Intent ajustes = new Intent(Agregar.this, Ajustes.class);
+                startActivity(ajustes);
 
-        ajustes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent favoritos = new Intent(Agregar.this, Ajustes.class);
-                startActivity(favoritos);
             }
         });
+        recyclerMenu.setAdapter(adapter);
 
 
 
@@ -194,6 +175,16 @@ public class Agregar extends AppCompatActivity {
 
 
     }
+
+    private void llenarMenu() {
+            ListaMenu.add(new AdapHome(R.drawable.image_6));
+            ListaMenu.add(new AdapHome(R.drawable.imagegoo_3_1));
+            ListaMenu.add(new AdapHome(R.drawable.image_2));
+            ListaMenu.add(new AdapHome(R.drawable.image_4));
+            ListaMenu.add(new AdapHome(R.drawable.image_8));
+            ListaMenu.add(new AdapHome(R.drawable.image_5));
+    }
+
 
     //tomarFotoCamara
     public void tomarFotoCamara(){
